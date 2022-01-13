@@ -1,16 +1,12 @@
+// Accepted
+
 #include <iostream>
 #include <string>
-using std::cout;
-using std::cin;
-using std::endl;
-using std::string;
+using namespace std;
 
-// SOLUTION ACCEPTED 
 int main() {
-
 	string word1, word2;
 	cin >> word1 >> word2;
-
 	char firstSharedLetter;
 	int firstWordIndex;
 	bool done = false;
@@ -25,7 +21,6 @@ int main() {
 		}
 		if(done) break;
 	}
-
 	bool once = false;
 	for(int i = 0; i < word2.length(); i++) {
 		if(word2[i] == firstSharedLetter and !once) {
@@ -39,6 +34,5 @@ int main() {
 		}
 		cout << endl;
 	}
-
 	return 0;
 }

@@ -1,3 +1,5 @@
+// Accepted
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -8,7 +10,6 @@ int main() {
 		int in; cin >> in;
 		input.push_back(in % 42);
 	} 
-
 	for(int i = 0; i < input.size(); i++) {
 		for(int ii = 0; ii < input.size(); ii++) {
 			if(i == ii) continue;
@@ -18,7 +19,6 @@ int main() {
 			}
 		}
 	}
-
 	cout << input.size() << endl;
 	return 0;
 }

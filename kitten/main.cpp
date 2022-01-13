@@ -1,16 +1,11 @@
+// Accepted
+
 #include <iostream>
 #include <bits/stdc++.h>
 #include <string>
 #include <vector>
-using std::cout;
-using std::endl;
-using std::cin;
-using std::vector;
-using std::string;
-using std::ios_base;
-using std::stringstream;
+using namespace std;
 
-// SOLUTION ACCEPTED
 int returnBaseBranch(int num, vector<vector<int>> &tree) {
 	for(int vec = 0; vec < tree.size(); vec++) 
 		for(int i = 0; i < tree[vec].size(); i++) 
@@ -21,20 +16,16 @@ int returnBaseBranch(int num, vector<vector<int>> &tree) {
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-
 	int startingBranch; 
 	vector<vector<int>> tree;
 	vector<int> solution;
-
 	while(true) {
 		string line;
 		getline(cin, line);
 		if(line == "") break;
-
 		vector<string> tokens;
 		stringstream check(line);
 		string im;
-
 		while(getline(check, im, ' ')) 
 			tokens.push_back(im);
 		vector<int> ints;
@@ -44,11 +35,9 @@ int main() {
 		}
 		tree.push_back(ints);
 	}
-
 	startingBranch = tree[0][0];
 	solution.push_back(startingBranch);
 	tree.erase(tree.begin());
-
 	int currentPos = startingBranch;
 	while(true) {
 		int base = returnBaseBranch(currentPos, tree);
@@ -58,9 +47,7 @@ int main() {
 			currentPos = base;
 		}
 	}
-
 	for(int i : solution) cout << i << " ";
 	cout << endl;
-
 	return 0;
 }

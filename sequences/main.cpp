@@ -1,10 +1,11 @@
+// Time limit exceeded, but this algorithm works (it just takes ages). I will mark to fix later.
+
 #include <math.h>
 #include <string>
 #include <vector>
 #include <iostream>
 using namespace std;
 
-// TIME LIMIT EXCEEDED, but CORRECT ANSWER
 void toBinary(string &builder, unsigned number){
    if (number > 1)
       toBinary(builder, number / 2);
@@ -21,7 +22,6 @@ int calculateNumberOfInversions(string number) {
 			ind1 = 0; ind2 = 1;
 			swappedInRun = false;
 		}
-
 		if(int(number[ind1] - '0') > int(number[ind2] - '0')) {
 			char temp = number[ind1];
 			number[ind1] = number[ind2];
@@ -29,10 +29,8 @@ int calculateNumberOfInversions(string number) {
 			inversions++;
 			swappedInRun = true;
 		}
-
 		ind1++; ind2++;
 	}
-
 	return inversions;
 }
 
@@ -41,7 +39,6 @@ int main() {
 	const string iniSeq = seq;
 	int qu = 0;
 	for(char s : seq) if(s == '?') qu++;
-
 	int sumOfInversions = 0;
 	for(int i = 0; i < pow(2, qu); i++) {
 		string combo;
@@ -59,13 +56,9 @@ int main() {
 				comboIndex++;
 			} 
 		}
-
 		sumOfInversions += calculateNumberOfInversions(seq);
-
 		seq = iniSeq;
 	}
-
 	cout << int(sumOfInversions % 1000000007) << endl;
-
 	return 0;
 }

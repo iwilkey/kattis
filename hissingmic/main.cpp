@@ -1,12 +1,11 @@
+// Accepted
+
 #include <iostream>
 #include <string>
 using namespace std;
 
-// SOLUTION ACCEPTED
 int main() {	
-
-	string in;
-	cin >> in;
+	string in; cin >> in;
 	bool lastS = false;
 	for(char c : in) {
 		if(c == 's' and not lastS) lastS = true;
@@ -15,8 +14,6 @@ int main() {
 			return 0;
 		} else lastS = false;
 	}
-
 	cout << "no hiss" << endl;
-
 	return 0;
 }
