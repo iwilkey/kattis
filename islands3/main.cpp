@@ -5,14 +5,12 @@
 #include <vector>
 using namespace std;
 
-int width, height;
-vector<vector<char>> map;
-vector<vector<bool>> visited;
+static const vector<int> dx = { 1, -1, 0, 0 };
+static const vector<int> dy = { 0, 0, -1, 1 };
+static int width, height;
+static vector<vector<char>> map;
+static vector<vector<bool>> visited;
 
-vector<int> dx = {1, -1, 0, 0};
-vector<int> dy = {0, 0, -1, 1};
-
-// ACCEPTED
 void findConnectedComponents(int i, int j) {
 	if(visited[i][j]) return;
 	visited[i][j] = true;
@@ -23,14 +21,12 @@ void findConnectedComponents(int i, int j) {
 		if(newJ < 0) continue;
 		if(newI >= height) continue;
 		if(newJ >= width) continue;
-		if(map[newI][newJ] == 'C' or map[newI][newJ] == 'L') {
+		if(map[newI][newJ] == 'C' or map[newI][newJ] == 'L') 
 			findConnectedComponents(newI, newJ);
-		}
 	}
 }
 
 int main() {
-
 	cin >> height >> width;
 	map.resize(height, vector<char>(width));
 	for(int i = 0; i < height; i++) {
@@ -38,9 +34,7 @@ int main() {
 			cin >> map[i][j];
 		}
 	}
-
 	visited.resize(height, vector<bool>(width, false));
-
 	int islands = 0;
 	for(int i = 0; i < height; i++) {
 		for(int j = 0; j < width; j++) {
@@ -50,8 +44,6 @@ int main() {
 			}
 		}
 	}
-
 	cout << islands << endl;
-
 	return 0;
 }
