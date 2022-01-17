@@ -1,4 +1,4 @@
-// ACCEPTED
+// Accepted
 
 #include <iostream>
 #include <vector>
