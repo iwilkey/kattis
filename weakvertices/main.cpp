@@ -1,4 +1,4 @@
-// Working currently.
+// Accepted
 
 #include <iostream>
 #include <vector>
@@ -22,10 +22,25 @@ int main() {
 			map.push_back(line);
 		}
 
-		for(int vert = 0; vert < in; vert++) {
-
+		for(int vert = 0; vert < n; vert++) {
+			bool bad = true;
+			for(int i = 0; i < n; i++) {
+				if(!map[vert][i]) continue;
+				for(int j = i + 1; j < n; j++) {
+					if(!map[vert][j]) continue;
+					if(map[i][j]) {
+						bad = false;
+						goto out;
+					}
+				}
+			}
+			out:;
+			if(bad) weak.push_back(vert);
 		}
 
+		for(int i = 0; i < weak.size(); i++)
+			cout << weak[i] << " ";
+		cout << endl;
 	}
 
 	return 0;
