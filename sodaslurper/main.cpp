@@ -2,13 +2,15 @@
 using namespace std;
 
 int main() {
-	int e, f, c, b = 0; cin >> e >> f >> c;
+	int e, f, c, cc;
+	cin >> e >> f >> c;
 	e += f;
-	while(true) {
-		if(e / c < 1) break;
-		e /= c;
-		b += e;
+	cc = c - 1;
+	int turns = 0;
+	while(e >= c) {
+		e -= cc;
+		turns++;
 	}
-	cout << b << endl;
+	cout << turns << endl;
 	return 0;
 }
