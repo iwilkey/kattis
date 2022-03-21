@@ -21,7 +21,7 @@ int main(void) {
 	for(int m = 2; m < n; m++) {
 		static int p;
 		p = m * n;
-		if(ndk2(p)) { // sex is fucking gayy
+		if(ndk2(p)) {
 			cout << m << endl;
 			return 0;
 		}
