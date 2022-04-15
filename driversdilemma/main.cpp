@@ -15,9 +15,24 @@ void log(string tag, T obj) {
 }
 
 void solve(void) {
-
-
     
+    double c, l, m;
+    cin >> c >> l >> m;
+
+    int max = 0;
+    for(int i = 0; i < 6; i++) {
+        static double mph, mpg;
+        cin >> mph >> mpg; 
+        double gal = (m / mpg);
+        gal += (m / mph) * l;
+        if((c / 2.0f) - gal > 0) max = mph;
+        else break;
+    }
+
+    cout << ((max != 0) ? "YES " : "NO");
+    if(max != 0) cout << max;
+    cout << endl;
+
     return;
 }
 
@@ -30,7 +45,7 @@ void initIO(int precision) {
 }
 
 int main(int argc, char ** args) {
-    initIO(10);
+    initIO(6);
     solve();
     return 0;
 }
