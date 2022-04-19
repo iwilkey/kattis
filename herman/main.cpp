@@ -18,6 +18,10 @@ void log(string tag, T obj) {
 
 void solve(void) {
 
+    int r; cin >> r;
+    cout << M_PI * pow(r, 2) << endl;
+    cout << (r + r) * r << endl;
+
     return;
 }
 
@@ -30,7 +34,7 @@ void initIO(int precision) {
 }
 
 int main(int argc, char ** args) {
-    initIO(1);
+    initIO(10);
     solve();
     return 0;
 }
