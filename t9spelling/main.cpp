@@ -24,7 +24,7 @@ const pair<int, string> pad[9] = {
     make_pair(5, "jkl"),
     make_pair(6, "mno"),
     make_pair(7, "pqrs"),
-    make_pair(8, "tuv"),
+    make_pair(8, "tuv"),xw
     make_pair(9, "wxyz")
 };
 
