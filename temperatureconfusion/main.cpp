@@ -11,7 +11,10 @@ int gcd(int a, int b) {
 
 int main(void) {
 
-	string frac, num, denom; 
+	int in;
+	string num = to_string(in);
+
+	string frac, num, denom;
 	getline(cin, frac);
 
 	for(int c = 0; c < frac.size(); c++) {
