@@ -4,16 +4,14 @@
 #include <string>
 using namespace std;
 
-int main() {	
+int main() {
 	string in; cin >> in;
-	bool lastS = false;
-	for(char c : in) {
-		if(c == 's' and not lastS) lastS = true;
-		else if(c == 's' and lastS) {
+	for(int c = 0; c < in.size() - 1; c++) {
+		if(in[c] == in[c + 1] && in[c] == 's') {
 			cout << "hiss" << endl;
 			return 0;
-		} else lastS = false;
-	}
+		}
+	} 
 	cout << "no hiss" << endl;
 	return 0;
 }
