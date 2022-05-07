@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "cmath": "cpp",
+        "iostream": "cpp",
+        "algorithm": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "*.tcc": "cpp"
+    }
+}
