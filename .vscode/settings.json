@@ -6,6 +6,8 @@
         "algorithm": "cpp",
         "forward_list": "cpp",
         "list": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "random": "cpp",
+        "__node_handle": "cpp"
     }
 }
