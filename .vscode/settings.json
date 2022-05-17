@@ -8,6 +8,9 @@
         "list": "cpp",
         "*.tcc": "cpp",
         "random": "cpp",
-        "__node_handle": "cpp"
+        "__node_handle": "cpp",
+        "memory": "cpp",
+        "regex": "cpp",
+        "utility": "cpp"
     }
 }

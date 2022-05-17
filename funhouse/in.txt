@@ -1,0 +1,38 @@
+11 6
+xxxxxxxxxxx
+x../..\...x
+x..../....x
+*../......x
+x.........x
+xxxxxxxxxxx
+5 5
+xxxxx
+*...x
+x...x
+x...x
+xxxxx
+5 5
+xxxxx
+x./\x
+*./.x
+x..\x
+xxxxx
+6 6
+xxx*xx
+x/...x
+x....x
+x/./.x
+x\./.x
+xxxxxx
+10 10
+xxxxxxxxxx
+x.../\...x
+x........x
+x........x
+x.../\..\x
+*...\/../x
+x........x
+x........x
+x...\/...x
+xxxxxxxxxx
+0 0
