@@ -16,6 +16,22 @@
         "__split_buffer": "cpp",
         "deque": "cpp",
         "string": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "bitset": "cpp",
+        "__bit_reference": "cpp",
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "array": "cpp",
+        "filesystem": "cpp",
+        "initializer_list": "cpp",
+        "iterator": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "span": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "valarray": "cpp",
+        "ranges": "cpp"
     }
 }
