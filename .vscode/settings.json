@@ -33,6 +33,7 @@
         "unordered_set": "cpp",
         "valarray": "cpp",
         "ranges": "cpp",
-        "climits": "cpp"
+        "climits": "cpp",
+        "complex": "cpp"
     }
 }
