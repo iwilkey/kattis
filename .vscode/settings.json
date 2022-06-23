@@ -34,6 +34,7 @@
         "valarray": "cpp",
         "ranges": "cpp",
         "climits": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "chrono": "cpp"
     }
 }
