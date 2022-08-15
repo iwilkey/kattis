@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main(void) {
@@ -10,9 +11,10 @@ int main(void) {
         for(int j = 1; j <= g; j++) {
             int a, b, c;
             cin >> a >> b >> c;
-            float maxR = (float)b / (2 * a);
-            if(currMax < abs(maxR)) {
-                currMax = abs(maxR);
+            float maxR = (float)b / (2 * a),
+                maxT = (-a * pow(maxR, 2)) + (b * maxR) + c;
+            if(currMax < maxT) {
+                currMax = maxT;
                 currMaxGear = j;
             }
         }
