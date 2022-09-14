@@ -1,3 +1,5 @@
 .vscode/
 .DS_STORE
 main
+test.sh
+testwi.sh
