@@ -44,7 +44,16 @@ void npickrcombRecr(vector<int> arr, int r, int index,
 
 void solve(void) {
 
-    
+    int minX, maxX, minY, maxY;
+    for(int i = 0; i < 3; i++) {
+        static int x, y;
+        cin >> x >> y;
+
+
+        points[i] = make_pair(x, y);
+    }
+
+
 
     return;
 }
