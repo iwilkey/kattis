@@ -1,6 +1,4 @@
 # What is Kattis?
-Kattis is an online programming problem archive. You are prompted with a mathematical word problem and sample IO and are challenged to submit
-a general solution using a programmatically implemented algorithm that can produce the correct output for hidden test cases. It is a great tool to practice
-one's mathematical reasoning, increase their programming skill set, and refine their general problem solving.
+open.kattis.com is an online mathematical problem archive that varifies your written computer instruction can solve a challenging situation. The degree of difficulty ranges from trivial to exceptionally demanding, and your total score is contingent on your accepted solution based on its impediment.
 
-This GitHub repository is a collection of most of my accepted solutions to Kattis problems identified by the folder names I organize them in.
+This repository is a collection of some of my accepted problem solutions identified by the folder names they are organized in.
