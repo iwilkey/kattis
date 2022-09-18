@@ -44,16 +44,23 @@ void npickrcombRecr(vector<int> arr, int r, int index,
 
 void solve(void) {
 
-    int minX, maxX, minY, maxY;
+    float maxDist = 0.0f;
+    int maxi1, maxi2;
+    pair<int, int> points[3];
     for(int i = 0; i < 3; i++) {
         static int x, y;
         cin >> x >> y;
-
-
         points[i] = make_pair(x, y);
+        if(i != 0) {
+            float dist = pow(pow(abs(points[i - 1].first - points[i].first), 2), 
+                pow(abs(points[i - 1].second - points[i].second), 2), 0.5f);    
+            if(maxDist < dist) {
+                maxDist = dist;
+                maxi1 = i - 1;
+                maxi2 = i;
+            }
+        }
     }
-
-
 
     return;
 }
