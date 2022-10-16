@@ -9,7 +9,7 @@ using namespace std;
 void round(double &num, int dec) {
 	num *= pow(10, dec + 1);
 	int trunc = (int)num,
-		lookat = trunc % 10; // This will tell if we need to round up or down.
+		lookat = trunc % 10;
 	trunc -= lookat; trunc /= 10;
 	trunc = (lookat >= 5) ? trunc + 1 : trunc;
 	num = (double)trunc / (pow(10, dec));
