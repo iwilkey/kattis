@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(void) {
-
     while(true) {
         int swe, sou;
         cin >> swe >> sou;
@@ -12,6 +11,5 @@ int main(void) {
         else if(sou == swe) cout << "Undecided." << endl;
         else cout << "To the convention." << endl;
     }
-
     return 0;
 }
