@@ -1,0 +1,8 @@
+3 2
+1 2
+largebox 13
+smallbox 4
+flatpack 5
+smallbox 4
+largebox 10
+flatpack 4
