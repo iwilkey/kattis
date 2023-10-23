@@ -1,0 +1,9 @@
+3
+A 2 X Y
+B 2 E F
+C 4 Z W L K
+4
+3 X
+6 Y
+2 Z
+5 E
