@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(void) {
-
     // Max subarray problem. Apply Kadane's algorithm, which finds the max subarray in O(n) time.
     /**
      * 
@@ -23,7 +22,6 @@ int main(void) {
 
             return maxSoFar
      */
-
     int b, p;
     cin >> b >> p;
     int msf = 0;
@@ -42,6 +40,5 @@ int main(void) {
             msf = meh;
     }
     cout << msf << endl;
-
     return 0;
 }
