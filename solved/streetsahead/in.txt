@@ -1,0 +1,7 @@
+3 3
+first
+second
+third
+first second
+third first
+second third

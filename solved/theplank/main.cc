@@ -5,7 +5,7 @@ int main(void) {
     int n;
     cin >> n;
     int dp[n + 1];
-    // three building blocks: dp[i + 1 = length of plank]
+    // base cases for dp[i = length of plank]
     dp[0] = 1;
     dp[1] = 1;
     dp[2] = 2;
